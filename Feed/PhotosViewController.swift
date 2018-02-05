@@ -70,15 +70,16 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                 // TODO: Reload the table view
                 self.tableView.reloadData()
                 
-                refreshControl.endRefreshing()
+                
             }
         }
+        refreshControl.endRefreshing()
         task.resume()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = CGFloat(200)  // Set the height to 200, otherwise the photo cell will be too short
@@ -94,11 +95,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         session.configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         let task = session.dataTask(with: url) { (data, response, error) in
-            if let error = error {
-                print(error.localizedDescription)
+            if let _ = error {
+                let alert = UIAlertController(title: "Oops...", message: "Please connect to Internet to see the feed.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true)
             } else if let data = data,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                //print(dataDictionary)
                 
                 // TODO: Get the posts and store in posts property
                 // Get the dictionary from the response key
