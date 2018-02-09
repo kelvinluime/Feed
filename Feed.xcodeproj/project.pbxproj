@@ -10,6 +10,8 @@
 		1F089D4F33E69C5012F601F6 /* Pods_FeedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B3BA1BDF1B804B7307DD5F /* Pods_FeedTests.framework */; };
 		8BA40C433579EF496AEC657B /* Pods_FeedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DCC6179AFDA5316EB41C7E /* Pods_FeedUITests.framework */; };
 		B732EA8F0CB6EA8D4588462A /* Pods_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C776EDE532C63AEE0EE26E89 /* Pods_Feed.framework */; };
+		BF199C67202C083500E42DF3 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF199C66202C083500E42DF3 /* PhotoDetailsViewController.swift */; };
+		BF199C69202D6D0200E42DF3 /* FullScreenPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF199C68202D6D0200E42DF3 /* FullScreenPhotoViewController.swift */; };
 		BFC2C9782023C74B00B8BB18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2C9772023C74B00B8BB18 /* AppDelegate.swift */; };
 		BFC2C97D2023C74B00B8BB18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC2C97B2023C74B00B8BB18 /* Main.storyboard */; };
 		BFC2C97F2023C74B00B8BB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC2C97E2023C74B00B8BB18 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		66A8C3B0F75974E82F9DD4E1 /* Pods-FeedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedUITests/Pods-FeedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E927872E1898CC3DD34A8C5 /* Pods-FeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeedTests/Pods-FeedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90DCC6179AFDA5316EB41C7E /* Pods_FeedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF199C66202C083500E42DF3 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		BF199C68202D6D0200E42DF3 /* FullScreenPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoViewController.swift; sourceTree = "<group>"; };
 		BFC2C9742023C74B00B8BB18 /* Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC2C9772023C74B00B8BB18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC2C97C2023C74B00B8BB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				BFC2C9832023C74B00B8BB18 /* Info.plist */,
 				BFC2C9A52023D52000B8BB18 /* PhotosViewController.swift */,
 				BFC2C9B12023E02C00B8BB18 /* PhotoCell.swift */,
+				BF199C66202C083500E42DF3 /* PhotoDetailsViewController.swift */,
+				BF199C68202D6D0200E42DF3 /* FullScreenPhotoViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -467,6 +473,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF199C69202D6D0200E42DF3 /* FullScreenPhotoViewController.swift in Sources */,
+				BF199C67202C083500E42DF3 /* PhotoDetailsViewController.swift in Sources */,
 				BFC2C9B22023E02C00B8BB18 /* PhotoCell.swift in Sources */,
 				BFC2C9782023C74B00B8BB18 /* AppDelegate.swift in Sources */,
 				BFC2C9A62023D52000B8BB18 /* PhotosViewController.swift in Sources */,
